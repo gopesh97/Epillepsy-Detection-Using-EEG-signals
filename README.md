@@ -42,7 +42,7 @@ All subjects falling in classes 2, 3, 4, and 5 are subjects who did not have epi
 ## Procedure Followed for Binary Classification 
    Eplileptical - **1**
    Not Epileptical - **0**
-1. Model.ipynb :
+1. Model.ipynb :  
     First i visualised the data, for all the 5 classes. 
     (i) Then defined a Recurrent Neural Network architecture , that has 2 layers of LSTMs  
     (ii)Then defined the optimiser as 'adam' and loss as 'binary_crossentropy' which gave better results than 'categorical_crossentropy'  
@@ -50,7 +50,7 @@ All subjects falling in classes 2, 3, 4, and 5 are subjects who did not have epi
       taking 1 in every 4 samples,then normalising the data and used the previously splitted test data as validation data.  
     (iv) Saved the model after training it for 50 epochs  
     (v) Plotted the rate at which the loss and accuracy are changing.  
-2. Product_Final.ipynb
+2. Product_Final.ipynb  
   The trained model is loaded then its used for prediction on the validation set.
   Now the prediction are changed for binary class, i.e., if the prediction is 1 then the signal is epileptical otherwise the class is made 0 and signal is non epileptical.
   Same procedure is followed for trainig set.
